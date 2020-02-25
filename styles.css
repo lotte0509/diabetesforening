@@ -52,6 +52,9 @@
         #randomTip {
             font-size: 2.2vh;
             margin: 12% 0 8% 0;
+            border: none;
+            background-color: #e8e7e6;
+            outline: none;
         }
         
         #lblRandomTip {
