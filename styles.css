@@ -1,364 +1,209 @@
-                        @charset "utf-8";
-                    * {
-                        box-sizing: border-box;
-                    }
-                    
-                    html {
-                        scroll-behavior: smooth;
-                    }
-                    /*MOBILE FIRST*/
-                    
-                    body {
-                        font-family: 'Varela Round', sans-serif;
-                        margin: 0;
-                    }
-                    
-                    .grid-container {
-                        display: grid;
-                        grid-template-columns: 100%;
-                        grid-template-rows: 1fr auto;
-                    }
-                    /*header*/
-                    
-                    header {
-                        background-color: #BA0816;
-                        position: fixed;
-                        top: 0;
-                        width: 100%;
-                        display: inline;
-                    }
-                    
-                    .fa-bars {
-                        margin: 6%;
-                        font-size: 150%;
-                        color: #ffffff;
-                        visibility: visible;
-                    }
-                    
-                    .fa-user {
-                        margin: 6%;
-                        font-size: 150%;
-                        color: #ffffff;
-                        float: right;
-                        visibility: visible;
-                    }
-                    
-                    .fa-search {
-                        visibility: hidden;
-                    }
-                    
-                    div header nav a {
-                        margin: 0 5% 0 13%;
-                        color: #ffffff;
-                        text-align: center;
-                        text-decoration: none;
-                        font-size: 3.5vh;
-                    }
-                    /*første  afsnit*/
-                    
-                    .firstimage {
-                        background-image: url(images/vr-back.jpg);
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        margin: 18% 0 0 0;
-                        text-align: center;
-                        color: #ffffff;
-                        padding: 40% 0 0 0;
-                    }
-                    
-                    div h1 {
-                        margin: 0;
-                    }
-                    
-                    div h2 {
-                        margin: 0 0 10% 0;
-                        font-size: 2vh;
-                    }
-                    
-                    div i {
-                        visibility: hidden;
-                    }
-                    /*articlerne + billeder*/
-                    
-                    article {
-                        padding: 7%;
-                    }
-                    
-                    article h1 {
-                        color: #05c46b;
-                        font-weight: bold;
-                        margin-bottom: 4%;
-                    }
-                    
-                    p {
-                        font-size: 1.9vh;
-                        color: #222222;
-                        line-height: 1.5;
-                        margin: 0;
-                    }
-                    
-                    .greygrit {
-                        background-color: #F3F3F3;
-                    }
-                    
-                    figure {
-                        margin: 0;
-                        overflow: hidden;
-                    }
-                    /*related aricles aside */
-                    
-                    aside h1 {
-                        color: #05c46b;
-                        font-weight: bold;
-                        margin: 4%;
-                    }
-                    
-                    .e-mail {
-                        text-align: center;
-                    }
-                    
-                    .imgsection {
-                        float: left;
-                    }
-                    
-                    .googlecardboard {
-                        float: right;
-                        width: 50%;
-                        background-color: #F3F3F3;
-                        padding: 4% 4% 29% 4%;
-                        margin-bottom: 1%;
-                    }
-                    
-                    .british {
-                        float: right;
-                        width: 50%;
-                        background-color: #F3F3F3;
-                        padding: 4% 4% 17% 4%;
-                    }
-                    
-                    aside a {
-                        text-decoration: none;
-                        font-size: 2.2vh;
-                        color: #222222;
-                        font-weight: bold;
-                    }
-                    
-                    .newsletter {
-                        text-align: center;
-                        color: #575fcf;
-                        font-size: 2.8vh;
-                    }
-                    
-                    .infotext {
-                        text-align: center;
-                        font-size: 1.9vh;
-                        font-weight: bold;
-                    }
-                    
-                    .email {
-                        text-align: center;
-                        font-size: 2vh;
-                        font-weight: bold;
-                        border-bottom: #575fcf;
-                        border-style: groove;
-                        border-top: 0;
-                        border-right: 0;
-                        border-left: 0;
-                        padding: 10% 23% 3% 23%;
-                    }
-                    
-                    .btn {
-                        padding: 4% 35%;
-                        margin: 8% 0 15% 0;
-                        border: none;
-                        background-color: #575fcf;
-                        color: #fff;
-                        font-size: 2vh;
-                        font-weight: bold;
-                        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-                    }
-                    /*footer*/
-                    
-                    footer {
-                        background-color: #05c46b;
-                    }
-                    
-                    footer h1 {
-                        color: #ffffff;
-                        font-size: 3vh;
-                        font-weight: bold;
-                        margin: 10% 0 4% 0;
-                        text-align: center;
-                    }
-                    
-                    footer p {
-                        font-size: 1.9vh;
-                        color: #ffffff;
-                        line-height: 1.5;
-                        margin: 0 10% 10% 10%;
-                        text-align: center;
-                    }
-                    
-                    footer nav {
-                        text-align: center;
-                    }
-                    
-                    .fab {
-                        margin: 0 4% 15% 4%;
-                        font-size: 250%;
-                        color: #ffffff;
-                        visibility: visible;
-                    }
-                    /*LAPTOP VERSION*/
-                    
-                    @media (min-width: 640px) {
-                        .grid-container {
-                            display: grid;
-                            grid-template-columns: 40% 60%;
-                            grid-template-rows: 1fr auto;
-                        }
-                        div,
-                        article {
-                            grid-column: 1/3
-                        }
-                        /*header*/
-                        header {
-                            height: 10%;
-                            position: absolute;
-                        }
-                        header nav {
-                            display: inline;
-                        }
-                        .fa-bars {
-                            margin: 2.3%;
-                            font-size: 3vh;
-                        }
-                        .fa-user {
-                            margin: 2.3%;
-                            font-size: 3vh;
-                        }
-                        .fa-search {
-                            visibility: visible;
-                            margin: 2.3% 0 0 34%;
-                            font-size: 3vh;
-                            color: #ffffff;
-                        }
-                        div header nav a {
-                            margin: 0 0 0 38%
-                        }
-                        /*First section*/
-                        .firstimage {
-                            margin-top: 0;
-                            background-repeat: round;
-                            background-size: 100%;
-                            background-attachment: fixed;
-                        }
-                        div h2 {
-                            margin-bottom: 5%;
-                        }
-                        div i {
-                            visibility: visible;
-                            font-size: 7vh;
-                            margin-bottom: 5%;
-                            color: #ffffff;
-                        }
-                        #down {
-                            animation-name: arrow-nudge;
-                            animation-duration: 1s;
-                            animation-iteration-count: infinite;
-                            animation-direction: alternate;
-                            animation-timing-function: ease-in-out;
-                        }
-                        @keyframes arrow-nudge {
-                            from {
-                                transform: translateY(0);
-                            }
-                            to {
-                                transform: translateY(20px);
-                            }
-                        }
-                        /*Next*/
-                        article {
-                            grid-column: initial;
-                        }
-                        .article {
-                            padding: 18%;
-                        }
-                        #article {
-                            padding: 11% 15% 11% 10%;
-                        }
-                        figure img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                        /*aside*/
-                        .imgsection {
-                            float: left;
-                            margin: 0 0 5% 5%;
-                        }
-                        .googlecardboard {
-                            width: 62.5%;
-                            padding: 4% 4% 20% 4%;
-                            margin-bottom: 6.1%;
-                        }
-                        .british {
-                            width: 62.5%;
-                            padding: 4% 4% 16% 4%;
-                        }
-                        aside div a {
-                            text-decoration: none;
-                            font-size: 2.2vh;
-                            color: #222222;
-                            font-weight: bold;
-                        }
-                        /*subcribe*/
-                        .newsletter {
-                            text-align: center;
-                            color: #575fcf;
-                            font-size: 2.8vh;
-                        }
-                        .infotext {
-                            text-align: center;
-                            font-size: 1.9vh;
-                            font-weight: bold;
-                        }
-                        .email {
-                            text-align: center;
-                            font-size: 2vh;
-                            font-weight: bold;
-                            border-bottom: #575fcf;
-                            border-style: groove;
-                            border-top: 0;
-                            border-right: 0;
-                            border-left: 0;
-                            padding: 10% 23% 3% 23%;
-                        }
-                        .btn {
-                            padding: 4% 35%;
-                            margin: 8% 0 15% 3.5%;
-                            border: none;
-                            background-color: #575fcf;
-                            color: #fff;
-                            font-size: 2vh;
-                            font-weight: bold;
-                            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-                        }
-                        /*footer*/
-                        footer {
-                            grid-column: inherit;
-                        }
-                        footer h1 {
-                            margin: 2%;
-                            display: inline-block;
-                        }
-                        footer p {
-                            margin: 0 15% 0 25%;
-                            display: inline-block;
-                        }
-                        footer nav {
-                            text-align: center;
-                            display: inline;
-                        }
-                        .fab {
-                            margin: 1.5%;
-                        }
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*MOBILE FIRST*/
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+}
+
+
+/*header*/
+
+header {
+    background-color: #BA0816;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline;
+}
+
+header nav img {
+    width: 60%;
+    margin: 3%;
+}
+
+div header nav a {
+    margin: 0 5% 0 13%;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+
+
+/*første  afsnit*/
+
+.firstimage {
+    background-image: url(images/vr-back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 18% 0 0 0;
+    text-align: center;
+    color: #ffffff;
+    padding: 40% 0 0 0;
+}
+
+div h1 {
+    margin: 0;
+}
+
+div h2 {
+    margin: 0 0 10% 0;
+    font-size: 2vh;
+}
+
+div i {
+    visibility: hidden;
+}
+
+
+/*articlerne + billeder*/
+
+article {
+    padding: 7%;
+}
+
+article h1 {
+    color: #05c46b;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+p {
+    font-size: 1.9vh;
+    color: #222222;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.greygrit {
+    background-color: #F3F3F3;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/*related aricles aside */
+
+aside h1 {
+    color: #05c46b;
+    font-weight: bold;
+    margin: 4%;
+}
+
+.e-mail {
+    text-align: center;
+}
+
+.imgsection {
+    float: left;
+}
+
+.googlecardboard {
+    float: right;
+    width: 50%;
+    background-color: #F3F3F3;
+    padding: 4% 4% 29% 4%;
+    margin-bottom: 1%;
+}
+
+.british {
+    float: right;
+    width: 50%;
+    background-color: #F3F3F3;
+    padding: 4% 4% 17% 4%;
+}
+
+aside a {
+    text-decoration: none;
+    font-size: 2.2vh;
+    color: #222222;
+    font-weight: bold;
+}
+
+.newsletter {
+    text-align: center;
+    color: #575fcf;
+    font-size: 2.8vh;
+}
+
+.infotext {
+    text-align: center;
+    font-size: 1.9vh;
+    font-weight: bold;
+}
+
+.email {
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    border-bottom: #575fcf;
+    border-style: groove;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding: 10% 23% 3% 23%;
+}
+
+.btn {
+    padding: 4% 35%;
+    margin: 8% 0 15% 0;
+    border: none;
+    background-color: #575fcf;
+    color: #fff;
+    font-size: 2vh;
+    font-weight: bold;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #05c46b;
+}
+
+footer h1 {
+    color: #ffffff;
+    font-size: 3vh;
+    font-weight: bold;
+    margin: 10% 0 4% 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.9vh;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 0 10% 10% 10%;
+    text-align: center;
+}
+
+footer nav {
+    text-align: center;
+}
+
+.fab {
+    margin: 0 4% 15% 4%;
+    font-size: 250%;
+    color: #ffffff;
+    visibility: visible;
+}
