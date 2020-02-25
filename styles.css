@@ -19,9 +19,9 @@
         display: inline;
     }
     
-    header a img {
-        width: 60%;
-        margin: 3%;
+    .logo {
+        width: 200px;
+        margin: 10px;
     }
     /*Forsiden*/
     
@@ -36,21 +36,17 @@
     
     .button1 {
         display: block;
-        padding: 9%;
+        padding: 12%;
         border: none;
         background-color: white;
         box-shadow: 10px 10px 10px #00000025;
         font-size: 2.2vh;
-        margin: -4% 10%;
+        margin: 10%;
         width: 80%;
     }
     
     a {
         text-decoration: none;
-        margin: 0 4% 15% 4%;
-        font-size: 250%;
-        color: #ffffff;
-        visibility: visible;
     }
     
     #randomTip {
@@ -81,4 +77,39 @@
     .white {
         background-color: #fff;
         border: 1px solid #000;
+    }
+    /*Indkøbsguide*/
+    
+    .button2 {
+        display: inline-block;
+        padding: 5% 0;
+        border: none;
+        background-color: white;
+        box-shadow: 10px 10px 10px #00000025;
+        font-size: 1.2vh;
+        margin: 2%;
+        width: 28%;
+    }
+    
+    .firstimg {
+        width: 100%;
+        margin-top: 10%;
+    }
+    
+    .guide {
+        width: 100%;
+    }
+    
+    .button3 {
+        display: block;
+        color: black;
+        padding: 5% 1%;
+        border: none;
+        background-color: white;
+        box-shadow: 10px 10px 10px #00000025;
+        font-size: 1.5vh;
+        margin: 2% 33%;
+        width: 35%;
+        position: fixed;
+        bottom: 20px;
     }
