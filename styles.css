@@ -1,115 +1,131 @@
-    @charset "utf-8";
-    * {
-        box-sizing: border-box;
-    }
-    /*MOBILE FIRST*/
-    
-    body {
-        font-family: 'Titillium Web';
-        margin: 0;
-        background-color: #E8E7E6;
-    }
-    /*header*/
-    
-    header {
-        background-color: #BA0816;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: inline;
-    }
-    
-    .logo {
-        width: 200px;
-        margin: 10px;
-    }
-    /*Forsiden*/
-    
-    div {
-        text-align: center;
-    }
-    
-    h1 {
-        margin: 27% 0 1% 0;
-        text-align: center;
-    }
-    
-    .button1 {
-        display: block;
-        padding: 12%;
-        border: none;
-        background-color: white;
-        box-shadow: 10px 10px 10px #00000025;
-        font-size: 2.2vh;
-        margin: 10%;
-        width: 80%;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    #randomTip {
-        font-size: 2.2vh;
-        margin: 12% 0 8% 0;
-    }
-    
-    #lblRandomTip {
-        margin-bottom: 10%;
-        font-size: 2vh;
-    }
-    /* Indkøbskort */
-    
-    .card {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        background-color: lightgrey;
-        padding: 10px;
-        margin-top: 60px;
-    }
-    
-    .orange {
-        background-color: #ff8000;
-        border: 1px solid #000;
-    }
-    
-    .white {
-        background-color: #fff;
-        border: 1px solid #000;
-    }
-    /*Indkøbsguide*/
-    
-    .button2 {
-        display: inline-block;
-        padding: 5% 0;
-        border: none;
-        background-color: white;
-        box-shadow: 10px 10px 10px #00000025;
-        font-size: 1.2vh;
-        margin: 2%;
-        width: 28%;
-    }
-    
-    .firstimg {
-        width: 100%;
-        margin-top: 10%;
-    }
-    
-    .guide {
-        width: 100%;
-    }
-    
-    .button3 {
-        display: block;
-        color: black;
-        padding: 5% 1%;
-        border: none;
-        background-color: white;
-        box-shadow: 10px 10px 10px #00000025;
-        font-size: 1.5vh;
-        margin: 2% 33%;
-        width: 35%;
-        position: fixed;
-        bottom: 20px;
-    }
+        @charset "utf-8";
+        * {
+            box-sizing: border-box;
+        }
+        /*MOBILE FIRST*/
+        
+        body {
+            font-family: 'Titillium Web';
+            margin: 0;
+            background-color: #E8E7E6;
+        }
+        /*header*/
+        
+        header {
+            background-color: #BA0816;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: inline;
+        }
+        
+        .logo {
+            width: 200px;
+            margin: 10px;
+        }
+        /*Forsiden*/
+        
+        div {
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 27% 0 1% 0;
+            text-align: center;
+        }
+        
+        .button1 {
+            display: block;
+            padding: 12%;
+            border: none;
+            background-color: white;
+            box-shadow: 10px 10px 10px #00000025;
+            font-size: 2.2vh;
+            margin: 10%;
+            width: 80%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        #randomTip {
+            font-size: 2.2vh;
+            margin: 12% 0 8% 0;
+        }
+        
+        #lblRandomTip {
+            margin-bottom: 10%;
+            font-size: 2vh;
+        }
+        
+        .card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            background-color: lightgrey;
+            padding: 10px;
+            margin-top: 60px;
+        }
+        
+        .orange {
+            background-color: #ff8000;
+            border: 1px solid #000;
+        }
+        
+        .white {
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+        /*Indkøbsguide*/
+        
+        .button2 {
+            display: inline-block;
+            padding: 5% 0;
+            border: none;
+            background-color: white;
+            box-shadow: 10px 10px 10px #00000025;
+            font-size: 1.2vh;
+            margin: 2%;
+            width: 28%;
+        }
+        
+        .firstimg {
+            width: 100%;
+            margin-top: 10%;
+        }
+        
+        .guide {
+            width: 100%;
+        }
+        
+        .button3 {
+            display: block;
+            color: black;
+            padding: 5% 1%;
+            border: none;
+            background-color: white;
+            box-shadow: 10px 10px 10px #00000025;
+            font-size: 1.5vh;
+            margin: 2% 33%;
+            width: 35%;
+            position: fixed;
+            bottom: 20px;
+        }
+        /* Indkøbskort */
+        
+        @media (orientation: landscape) {
+            .flip {
+                display: none;
+            }
+        }
+        
+        @media (orientation: portrait) {
+            .card {
+                display: none;
+            }
+            .flip {
+                width: 80px;
+                margin: 35%;
+            }
+        }
