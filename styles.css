@@ -1,4 +1,4 @@
-@charset "utf-8";
+    @charset "utf-8";
 * {
     box-sizing: border-box;
 }
@@ -53,4 +53,29 @@ p {
 
 a {
     text-decoration: none;
-}
+    .fab {
+        margin: 0 4% 15% 4%;
+        font-size: 250%;
+        color: #ffffff;
+        visibility: visible;
+    }
+    /* Indkøbskort */
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: lightgrey;
+        padding: 10px;
+        margin-top: 60px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .orange {
+        background-color: #ff8000;
+        border: 1px solid #000;
+    }
+    .white {
+        background-color: #fff;
+        border: 1px solid #000;
+    }
