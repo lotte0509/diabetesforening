@@ -71,6 +71,10 @@
             .flip {
                 display: none;
             }
+            .landscape {
+                margin: 53% 0 0 80%;
+                font-size: 52px;
+            }
         }
         
         @media (orientation: portrait) {
