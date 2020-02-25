@@ -1,72 +1,84 @@
-                @charset "utf-8";
-            * {
-                box-sizing: border-box;
-            }
-            /*MOBILE FIRST*/
-            
-            body {
-                font-family: 'Titillium Web';
-                margin: 0;
-                background-color: #E8E7E6;
-            }
-            /*header*/
-            
-            header {
-                background-color: #BA0816;
-                position: fixed;
-                top: 0;
-                width: 100%;
-                display: inline;
-            }
-            
-            header a img {
-                width: 60%;
-                margin: 3%;
-            }
-            /*Forsiden*/
-            
-            h1 {
-                margin-top: 35%;
-                text-align: center;
-            }
-            
-            p {
-                margin: 0 10%;
-            }
-            
-            .button1 {
-                display: block;
-                padding: 10%;
-                border: none;
-                background-color: white;
-                box-shadow: 10px 10px 10px #00000025;
-                font-size: 2.2vh;
-                margin: 10%;
-                width: 80%;
-            }
-            
-            a {
-                text-decoration: none;
-                .fab {
-                    margin: 0 4% 15% 4%;
-                    font-size: 250%;
-                    color: #ffffff;
-                    visibility: visible;
-                }
-                /* Indkøbskort */
-                .card {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto;
-                    background-color: lightgrey;
-                    padding: 10px;
-                    margin-top: 60px;
-                }
-                .orange {
-                    background-color: #ff8000;
-                    border: 1px solid #000;
-                }
-                .white {
-                    background-color: #fff;
-                    border: 1px solid #000;
-                }
+    @charset "utf-8";
+    * {
+        box-sizing: border-box;
+    }
+    /*MOBILE FIRST*/
+    
+    body {
+        font-family: 'Titillium Web';
+        margin: 0;
+        background-color: #E8E7E6;
+    }
+    /*header*/
+    
+    header {
+        background-color: #BA0816;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: inline;
+    }
+    
+    header a img {
+        width: 60%;
+        margin: 3%;
+    }
+    /*Forsiden*/
+    
+    div {
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 27% 0 1% 0;
+        text-align: center;
+    }
+    
+    .button1 {
+        display: block;
+        padding: 9%;
+        border: none;
+        background-color: white;
+        box-shadow: 10px 10px 10px #00000025;
+        font-size: 2.2vh;
+        margin: -4% 10%;
+        width: 80%;
+    }
+    
+    a {
+        text-decoration: none;
+        margin: 0 4% 15% 4%;
+        font-size: 250%;
+        color: #ffffff;
+        visibility: visible;
+    }
+    
+    #randomTip {
+        font-size: 2.2vh;
+        margin: 12% 0 8% 0;
+    }
+    
+    #lblRandomTip {
+        margin-bottom: 10%;
+        font-size: 2vh;
+    }
+    /* Indkøbskort */
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: lightgrey;
+        padding: 10px;
+        margin-top: 60px;
+    }
+    
+    .orange {
+        background-color: #ff8000;
+        border: 1px solid #000;
+    }
+    
+    .white {
+        background-color: #fff;
+        border: 1px solid #000;
+    }
