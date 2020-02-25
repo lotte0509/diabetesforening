@@ -58,25 +58,7 @@
             margin-bottom: 10%;
             font-size: 2vh;
         }
-        
-        .card {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            background-color: lightgrey;
-            padding: 10px;
-            margin-top: 60px;
-        }
-        
-        .orange {
-            background-color: #ff8000;
-            border: 1px solid #000;
-        }
-        
-        .white {
-            background-color: #fff;
-            border: 1px solid #000;
-        }
+
         /*Indkøbsguide*/
         
         .button2 {
@@ -119,8 +101,11 @@
                 display: none;
             }
             .landscape {
-                margin: 53% 0 0 80%;
+                margin: 5% 0 0 80%;
                 font-size: 52px;
+            }
+            header {
+                    display: none;
             }
         }
         
